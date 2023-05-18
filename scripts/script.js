@@ -89,10 +89,7 @@ function createQuestionCards(arr){
                                 </div>
                             </article>`
         
-                        
-        
         quizForm.innerHTML += questionCard;
-
     }
     let submitInput = `<input type="submit" id="submit" value="Send"><label for="submit">Enviar respuestas</label>`
     quizForm.innerHTML += submitInput;
