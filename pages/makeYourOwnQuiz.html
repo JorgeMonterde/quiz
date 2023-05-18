@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <header>
@@ -25,19 +25,21 @@
 
     <main>
         <section class="quiz">
-            <article>
+            <article class="question_card">
                 <h2 id="#ArchiQuiz">Make your own Quiz</h2>
                 <p>Here you can create your own quiz and share it with your friends! Fill the form below:</p>
             </article>
             <article>
                 <form action="#">
-                    <div>
-                        <label>Write your question here: <input type="text" id="question" name="question" required></label>
-                        <label>Submit a representative image here: <input type="text" id="question" name="question"></label>
-                        <label>Write the correct answer here: <input type="text" id="answer" name="answer" required></label>
-                        <label>write an incorrect answer here: <input type="text" id="answer" name="answer" required></label>
-                        <label>Write an optional incorrect answer here: <input type="text" id="answer" name="answer"></label>
-                        <label>Write an optional incorrect answer here: <input type="text" id="answer" name="answer"></label>
+                    <div class="question_card">
+                        
+                            <label>Write your question here: <input type="text" id="question" name="question" required></label>
+                            <label>Submit a representative image here: <input type="text" id="question" name="question"></label>
+                            <label>Write the correct answer here: <input type="text" id="answer" name="answer" required></label>
+                            <label>write an incorrect answer here: <input type="text" id="answer" name="answer" required></label>
+                            <label>Write an optional incorrect answer here: <input type="text" id="answer" name="answer"></label>
+                            <label>Write an optional incorrect answer here: <input type="text" id="answer" name="answer"></label>
+                        
                     </div>
                     <input type="submit" value="">
                 </form>
@@ -46,21 +48,22 @@
     </main>
 
     <footer>
-        <section>
+        <section class="footerSection">
             <div class="social_networks">
                 <a href="https://es-es.facebook.com/" target="_blank">
-                    <img src="assets\images\facebook-logo.png" alt="logo de facebook" class="logoSocialNetwork">
+                    <img src="/assets/images/facebook-logo.png" alt="logo de facebook" class="logoSocialNetwork">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="assets\images\instgram-logo.png" alt="logo de instagram" class="logoSocialNetwork">
+                    <img src="/assets/images/instgram-logo.png" alt="logo de instagram" class="logoSocialNetwork">
                 </a>
             </div>
             <div class="sign">
-                <p>The Bridge</p>
-                <p>2023</p>
+                <a href="https://www.thebridge.tech/" target="_blank">
+                    <img src="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/The_Bridge_square/original.png?1635962015" alt="logo de instagram" class="logoSocialNetwork">
+                </a>
             </div>
         </section>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

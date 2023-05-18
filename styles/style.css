@@ -142,7 +142,7 @@ main{
 #submitInput{
     
 }
-label{
+.radio_div label{
     display:flex;
     flex-direction: column;
     align-items: center;
