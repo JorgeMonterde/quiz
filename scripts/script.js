@@ -4,9 +4,6 @@ let quizForm = document.querySelector(".quizForm");
 let cardsSection = document.querySelector(".cardsSection");
 
 
-
-// "Make your own quiz!": puedo hacer otra página que tenga un formulario para crear la QuestionsInfo y generar nuevos tests!
-
 // Questions Info
 let questionsInfo = [{
     question: '¿En qué ciudad se encuentra el edificio Chrysler?',
@@ -77,7 +74,7 @@ function createQuestionCards(arr){
         let {question, correctAnswer, wrongAnswers, img, alt} = arr[i];
         let quesNum = i+1;
 
-        let randomIndex = Math.floor(Math.random()*3);
+        let randomIndex = Math.floor(Math.random()*4);
         let answers = wrongAnswers;
         answers.splice(randomIndex, 0, correctAnswer);
 
@@ -113,7 +110,8 @@ quizForm.addEventListener("submit", function(event){
     console.log(correctAnswers)
 
     for(let i=0; i<correctAnswers.length; i++){
-        
+        console.log("+", correctAnswers[i])
+        console.log("-", userAnswers[i].value)
         if(correctAnswers[i]==userAnswers[i].value){
             console.log(`La respuesta número ${i+1} es correcta!`)
         } else {
@@ -122,3 +120,21 @@ quizForm.addEventListener("submit", function(event){
     }
     
 })
+
+
+
+
+
+
+
+// Question cards template:
+/* <article class="question_card">
+    <h3>0. ¿En qué año se terminó de construir la Opera de Sidney?</h3>
+    <img src="/assets/images/photo-1616128618694-96e9e896ecb7.jpeg" alt="Opera de Sidney">
+    <div class="radio_div">
+        <label>1973<input type="radio" name="answer1" value="1973"></label>
+        <label>1898<input type="radio" name="answer1" value="1898"></label>
+        <label>1952<input type="radio" name="answer1" value="1952"></label>
+        <label>1999<input type="radio" name="answer1" value="1999"></label>
+    </div>
+</article> */
