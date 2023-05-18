@@ -82,16 +82,22 @@ function createQuestionCards(arr){
                                 <h3>${quesNum}. ${question}</h3>
                                 <img src="${img}" alt="${alt}">
                                 <div class="radio_div">
-                                    <label>${answers[0]}<input type="radio" name="answer${quesNum}" value="${answers[0]}"></label>
-                                    <label>${answers[1]}<input type="radio" name="answer${quesNum}" value="${answers[1]}"></label>
-                                    <label>${answers[2]}<input type="radio" name="answer${quesNum}" value="${answers[2]}"></label>
-                                    <label>${answers[3]}<input type="radio" name="answer${quesNum}" value="${answers[3]}"></label>
+                                    <input type="radio" id="answer${quesNum}-1" name="ansQuest${quesNum}" value="${answers[0]}"><label for="answer${quesNum}-1">${answers[0]}</label>
+                                    <input type="radio" id="answer${quesNum}-2" name="ansQuest${quesNum}" value="${answers[1]}"><label for="answer${quesNum}-2">${answers[1]}</label>
+                                    <input type="radio" id="answer${quesNum}-3" name="ansQuest${quesNum}" value="${answers[2]}"><label for="answer${quesNum}-3">${answers[2]}</label>
+                                    <input type="radio" id="answer${quesNum}-4" name="ansQuest${quesNum}" value="${answers[3]}"><label for="answer${quesNum}-4">${answers[3]}</label>
                                 </div>
                             </article>`
         
-        cardsSection.innerHTML += questionCard;
+                        
+        
+        quizForm.innerHTML += questionCard;
+
     }
+    let submitInput = `<input type="submit" id="submit" value="Send"><label for="submit">Enviar respuestas</label>`
+    quizForm.innerHTML += submitInput;
 }
+                        
 
 createQuestionCards(questionsInfo);
 

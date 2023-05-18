@@ -31,6 +31,9 @@ a {
     color: var(--color1);
     text-decoration: none;
 }
+nav{
+    padding-right: 5%;
+}
 
 header{
     color: var(--color1);
@@ -60,9 +63,7 @@ header a:hover {
 .divTitle{
     padding-left: 5%;
 }
-.divNav{
-    padding-right: 5%;
-}
+
 
 body{
     margin: 0;
@@ -71,7 +72,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
-
     
 }
 
@@ -139,10 +139,8 @@ main{
     height: 100%;
     opacity: 0.4;
 }
-#submitInput{
-    
-}
-.radio_div label{
+
+.quizForm label{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +151,6 @@ main{
     background-color: var(--inputs);
     padding: 10px 3% 0 3%;
     margin: 0.5%
-    
 }
 label:hover {
     background-color: var(--darkGrey);
@@ -163,22 +160,9 @@ input:checked + label{
     background-color: var(--marked);
     color: var(--inputs);
 }
-label:active{
-    background-color: var(--marked);
-    color: var(--inputs);
-}
-
 
 #submit{
-    visibility: hidden;
-    background-color: var(--inputs);
-    border-radius: 10px;
-    text-align: center;
-    background-color: var(--inputs);
-    padding: 0px 3% 0 3%;
-    margin: 0.5%
-    
-
+    display: none;
 }
 
 
